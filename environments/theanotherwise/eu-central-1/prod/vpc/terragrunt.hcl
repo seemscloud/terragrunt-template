@@ -16,9 +16,9 @@ include {
 }
 
 terraform {
-  source = "${get_parent_terragrunt_dir()}/../../..//modules/resource-group"
+  source = "${get_parent_terragrunt_dir()}/..//modules/aws/vpc"
 }
 
 inputs = {
-  resource_group_name = "rg-test"
+  cidr_block = "10.255.0.0/16"
 }
