@@ -4,4 +4,7 @@ locals {
 
 inputs = {
   environment_name = local.environment_name
+  default_tags     = {
+    Environment = local.environment_name
+  }
 }

@@ -4,4 +4,7 @@ locals {
 
 inputs = {
   aws_region_name = local.aws_region_name
+  default_tags    = {
+    Region = local.aws_region_name
+  }
 }
